@@ -1,0 +1,19 @@
+.icon-show{
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 0px 3px 4px lightgray;
+}
+
+.icon{
+    height: 200px;
+    width: 200px;
+}
+
+.heart{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: red;
+}
