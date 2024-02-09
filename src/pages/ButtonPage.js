@@ -5,14 +5,10 @@ const ButtonPage = () => {
     <div className="flex flex-wrap gap-4 flex-col">
       <div>
         <span>
-          <Button primary onClick={() => console.log("Clicked")}>
-            Button Primary
-          </Button>
+          <Button primary>Button Primary</Button>
         </span>
         <span>
-          <Button secondary onMouseEnter={() => console.log("Mouse enter")}>
-            Button Secondary
-          </Button>
+          <Button secondary>Button Secondary</Button>
         </span>
         <span>
           <Button danger>Button Success</Button>
