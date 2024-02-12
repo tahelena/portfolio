@@ -1,10 +1,16 @@
-const Table = ({ data, tableConfig, keyFn }) => {
-  const columns = tableConfig.map((column) => (
-    <th key={column.label}>{column.label}</th>
-  ));
+import { Fragment } from "react";
+
+const Table = ({ data, config, keyFn }) => {
+  const columns = config.map((column) =>
+    column.header ? (
+      <Fragment key={column.label}>{column.header()}</Fragment>
+    ) : (
+      <th key={column.label}>{column.label}</th>
+    )
+  );
   const rows = data.map((row) => {
-    const cells = tableConfig.map((column) => (
-      <td className="p-2" key={column.label}>
+    const cells = config.map((column) => (
+      <td className="p-3" key={column.label}>
         {column.render(row)}
       </td>
     ));
