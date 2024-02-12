@@ -4,6 +4,7 @@ const SideBar = () => {
   const links = [
     { name: "Accordion", path: "/accordion" },
     { name: "Buttons", path: "/buttons" },
+    { name: "Counter", path: "/counter" },
     { name: "Dropdown", path: "/dropdown" },
     { name: "Modal", path: "/modal" },
     { name: "Table", path: "/table" },
