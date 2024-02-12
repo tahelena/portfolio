@@ -6,6 +6,7 @@ const SideBar = () => {
     { name: "Buttons", path: "/buttons" },
     { name: "Dropdown", path: "/dropdown" },
     { name: "Modal", path: "/modal" },
+    { name: "Table", path: "/table" },
   ];
   return (
     <div className="sticky top-0 overflow-y-scroll flex flex-col items-start">
