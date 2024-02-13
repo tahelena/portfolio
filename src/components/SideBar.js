@@ -5,6 +5,7 @@ const SideBar = () => {
     { name: "Accordion", path: "/accordion" },
     { name: "Buttons", path: "/buttons" },
     { name: "Counter", path: "/counter" },
+    { name: "Counter Reducer", path: "/counter-reducer" },
     { name: "Dropdown", path: "/dropdown" },
     { name: "Modal", path: "/modal" },
     { name: "Table", path: "/table" },
