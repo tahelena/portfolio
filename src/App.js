@@ -5,10 +5,11 @@ import ExpenseValue from "./components/ExpenseValue";
 
 const App = () => {
   return (
-    <div>
+    <div className="container is-fluid">
       <ExpenseForm />
-      <ExpenseList />
       <ExpenseSearch />
+      <ExpenseList />
+
       <ExpenseValue />
     </div>
   );
