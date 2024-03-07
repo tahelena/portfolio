@@ -1,4 +1,4 @@
-import Route from "./components/Route";
+import Route from "./components/reusable/Route";
 import SideBar from "./components/SideBar";
 import AccordionPage from "./pages/AccordionPage";
 import ButtonPage from "./pages/ButtonPage";
@@ -6,6 +6,7 @@ import CounterPage from "./pages/CounterPage";
 import CounterPageReducer from "./pages/CounterPageReducer";
 import DropdownPage from "./pages/DropdownPage";
 import ModalPage from "./pages/ModalPage";
+import  MoviesSongPage  from "./pages/MovieSongPage";
 import TablePage from "./pages/TablePage";
 
 const App = () => {
@@ -34,6 +35,9 @@ const App = () => {
         <Route path="/components/counter-reducer">
           <CounterPageReducer initialCount={30} />
         </Route>
+        <Route path="/apps/movie-song">
+          <MoviesSongPage />
+        </Route> 
       </div>
     </div>
   );

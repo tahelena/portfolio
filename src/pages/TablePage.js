@@ -1,4 +1,4 @@
-import SortableTable from "../components/SortableTable";
+import SortableTable from "../components/reusable/SortableTable";
 
 const TablePage = () => {
   const data = [

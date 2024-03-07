@@ -1,6 +1,6 @@
 import { useReducer } from "react";
-import Button from "../components/Button";
-import Panel from "../components/Panel";
+import Button from "../components/reusable/Button";
+import Panel from "../components/reusable/Panel";
 import { produce } from "immer";
 import reducer_count, {
   ADD_VALUE_TO_COUNT,

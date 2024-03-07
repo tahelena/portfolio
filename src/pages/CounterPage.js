@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "../components/Button";
-import Panel from "../components/Panel";
+import Button from "../components/reusable/Button";
+import Panel from "../components/reusable/Panel";
 
 const CounterPage = ({ initialCount }) => {
   const [count, setCount] = useState(initialCount);

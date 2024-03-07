@@ -3,7 +3,7 @@ import MoviePlaylist from "../components/MoviePlaylist";
 import SongPlaylist from "../components/SongPlaylist";
 import { reset } from "../store/index";
 
-export const MovieSongPage = () => {
+const MoviesSongPage = () => {
   const dispatch = useDispatch();
   const handleResetClick = () => {
     dispatch(reset());
@@ -20,3 +20,5 @@ export const MovieSongPage = () => {
     </div>
   );
 };
+
+export default MoviesSongPage;
