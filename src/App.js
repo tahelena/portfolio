@@ -13,25 +13,25 @@ const App = () => {
     <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
       <SideBar />
       <div className="col-span-5">
-        <Route path="/accordion">
+        <Route path="/components/accordion">
           <AccordionPage />
         </Route>
-        <Route path="/dropdown">
+        <Route path="/components/dropdown">
           <DropdownPage />
         </Route>
-        <Route path="/buttons">
+        <Route path="/components/buttons">
           <ButtonPage />
         </Route>
-        <Route path="/modal">
+        <Route path="/components/modal">
           <ModalPage />
         </Route>
-        <Route path="/table">
+        <Route path="/components/table">
           <TablePage />
         </Route>
-        <Route path="/counter">
+        <Route path="/components/counter">
           <CounterPage initialCount={10} />
         </Route>
-        <Route path="/counter-reducer">
+        <Route path="/components/counter-reducer">
           <CounterPageReducer initialCount={30} />
         </Route>
       </div>
