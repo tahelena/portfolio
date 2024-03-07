@@ -7,8 +7,12 @@ export const Provider = ({ children }) => {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = useCallback(async () => {
-    const res = await axios.get(apiUrl);
-    setBooks(res.data);
+    try {
+      const res = await axios.get(apiUrl);
+      setBooks(res.data);
+    } catch (error) {
+      console.log("Error ", error);
+    }
   }, []);
 
   const editBookById = async (id, newTitle) => {

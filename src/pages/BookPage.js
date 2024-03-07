@@ -7,7 +7,11 @@ function BookPage() {
   const { fetchBooks } = useBooksContext();
 
   useEffect(() => {
-    fetchBooks();
+    try {
+      fetchBooks();
+    } catch (error) {
+      console.log("Error ", error);
+    }
   }, [fetchBooks]);
 
   return (
