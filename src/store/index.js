@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { formReducer, changeCost, changeName } from "./slices/formSlice";
+import { formReducer, changeCost, changeName } from "./slice/formSlice";
 
 import {
   listReducer,
   addListItem,
   removeListItem,
   changeSearchTerm,
-} from "./slices/listSlice";
+} from "./slice/listSlice";
 
 const store = configureStore({
   reducer: { form: formReducer, list: listReducer },

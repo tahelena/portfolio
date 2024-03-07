@@ -1,17 +1,9 @@
-import ExpenseForm from "./components/ExpenseForm";
-import ExpenseList from "./components/ExpenseList";
-import ExpenseSearch from "./components/ExpenseSearch";
-import ExpenseValue from "./components/ExpenseValue";
+
+import ExpensePage from "./pages/ExpensePage";
 
 const App = () => {
   return (
-    <div className="container is-fluid">
-      <ExpenseForm />
-      <ExpenseSearch />
-      <ExpenseList />
-
-      <ExpenseValue />
-    </div>
+   <ExpensePage/>
   );
 };
 
