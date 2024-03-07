@@ -1,5 +1,5 @@
 import ImageShow from "./ImageShow";
-import "../style/ImageList.css";
+import "../../style/ImageList.css";
 
 const ImageList = ({ images }) => {
   return (
