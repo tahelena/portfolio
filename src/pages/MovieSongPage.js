@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import MoviePlaylist from "../components/MoviePlaylist";
-import SongPlaylist from "../components/SongPlaylist";
+import MoviePlaylist from "../components/playlist/MoviePlaylist";
+import SongPlaylist from "../components/playlist/SongPlaylist";
 import { reset } from "../store/index";
 
 const MoviesSongPage = () => {

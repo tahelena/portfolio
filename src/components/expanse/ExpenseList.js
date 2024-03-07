@@ -1,5 +1,5 @@
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
-import { removeListItem } from "../store";
+import { removeListItem } from "../../store";
 
 const ExpenseList = () => {
   const dispatch = useDispatch();

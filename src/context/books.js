@@ -3,7 +3,7 @@ import axios from "axios";
 const BooksContext = createContext();
 const apiUrl = "http://localhost:3001/books";
 
-export const Provider = ({ children }) => {
+export const BooksProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = useCallback(async () => {

@@ -8,10 +8,11 @@ function BookPage() {
 
   useEffect(() => {
     try {
-      fetchBooks();
+        fetchBooks();
     } catch (error) {
-      console.log("Error ", error);
+        console.log('Error ',error)
     }
+    
   }, [fetchBooks]);
 
   return (

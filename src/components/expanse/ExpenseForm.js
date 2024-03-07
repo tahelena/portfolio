@@ -1,5 +1,5 @@
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
-import { addListItem, changeCost, changeName } from "../store";
+import { addListItem, changeCost, changeName } from "../../store";
 
 const ExpenseForm = () => {
   const dispatch = useDispatch();

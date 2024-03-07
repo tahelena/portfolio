@@ -1,4 +1,4 @@
-import Table from "../Table";
+import Table from "./Table";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa6";
 import useSort from "../../hooks/use-sort";
 

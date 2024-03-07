@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeSearchTerm } from "../store";
+import { changeSearchTerm } from "../../store";
 
 const ExpenseSearch = () => {
   const dispatch = useDispatch();
