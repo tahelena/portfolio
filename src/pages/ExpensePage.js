@@ -8,7 +8,7 @@ const ExpensePage = () => {
         <ExpenseForm />
         <ExpenseSearch />
         <ExpenseList />
-  
+
         <ExpenseValue />
       </div>
     );

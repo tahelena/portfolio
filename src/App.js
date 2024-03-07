@@ -5,6 +5,7 @@ import ButtonPage from "./pages/ButtonPage";
 import CounterPage from "./pages/CounterPage";
 import CounterPageReducer from "./pages/CounterPageReducer";
 import DropdownPage from "./pages/DropdownPage";
+import ExpensePage from "./pages/ExpensePage";
 import ModalPage from "./pages/ModalPage";
 import  MoviesSongPage  from "./pages/MovieSongPage";
 import TablePage from "./pages/TablePage";
@@ -37,6 +38,9 @@ const App = () => {
         </Route>
         <Route path="/apps/movie-song">
           <MoviesSongPage />
+        </Route> 
+        <Route path="/apps/expense">
+          <ExpensePage />
         </Route> 
       </div>
     </div>

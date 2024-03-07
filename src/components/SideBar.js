@@ -10,7 +10,8 @@ const SideBar = () => {
     { name: "Modal", path: "/components/modal" },
     { name: "Table", path: "/components/table" },
   ];
-  const apps=[{name:'Movies and Songs Playlist',path:'/apps/movie-song'}]
+  const apps=[{name:'Movies and Songs Playlist',path:'/apps/movie-song'},
+  {name:'Expense',path:'/apps/expense'}]
   return (
     <div className="sticky top-0 overflow-y-scroll flex flex-col items-start">
     <div className="flex flex-col">
