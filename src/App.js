@@ -10,6 +10,7 @@ import ExpensePage from "./pages/ExpensePage";
 import ImageSearchPage from "./pages/ImageSearchPage";
 import ModalPage from "./pages/ModalPage";
 import  MoviesSongPage  from "./pages/MovieSongPage";
+import RandomIconsPage from "./pages/RandomIconsPage";
 import TablePage from "./pages/TablePage";
 
 const App = () => {
@@ -50,6 +51,9 @@ const App = () => {
       <Route path="/apps/image-search">
       <ImageSearchPage />
     </Route> 
+    <Route path="/apps/random-icons">
+    <RandomIconsPage />
+  </Route> 
       </div>
     </div>
   );
