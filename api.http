@@ -1,0 +1,31 @@
+# Get DB
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+### 
+
+# Create item
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Gato de Botas"
+}
+
+
+### 
+
+# Modify item
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Gato de Botas 2"
+}
+
+
+### 
+
+# Delete item
+DELETE http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json

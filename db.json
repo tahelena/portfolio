@@ -1,0 +1,20 @@
+{
+  "books": [
+    {
+      "title": "Harry potter",
+      "id": 2
+    },
+    {
+      "title": "Create book",
+      "id": 4
+    },
+    {
+      "title": "Sample book!",
+      "id": 5
+    },
+    {
+      "title": "Some Text",
+      "id": 6
+    }
+  ]
+}
