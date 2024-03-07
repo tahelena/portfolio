@@ -15,6 +15,7 @@ const SideBar = () => {
     {name:'Movies and Songs Playlist',path:'/apps/movie-song'},
     {name:'Expense',path:'/apps/expense'},
     {name:'Books',path:'/apps/books'},
+    {name:'Image Search',path:'/apps/image-search'},
   ];
   return (
     <div className="sticky top-0 overflow-y-scroll flex flex-col items-start">

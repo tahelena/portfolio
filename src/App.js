@@ -7,6 +7,7 @@ import CounterPage from "./pages/CounterPage";
 import CounterPageReducer from "./pages/CounterPageReducer";
 import DropdownPage from "./pages/DropdownPage";
 import ExpensePage from "./pages/ExpensePage";
+import ImageSearchPage from "./pages/ImageSearchPage";
 import ModalPage from "./pages/ModalPage";
 import  MoviesSongPage  from "./pages/MovieSongPage";
 import TablePage from "./pages/TablePage";
@@ -46,6 +47,9 @@ const App = () => {
         <Route path="/apps/books">
         <BookPage />
       </Route> 
+      <Route path="/apps/image-search">
+      <ImageSearchPage />
+    </Route> 
       </div>
     </div>
   );

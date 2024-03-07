@@ -1,9 +1,9 @@
 import { useState } from "react";
-import searchImages from "../../api";
-import ImageList from "../image-search/ImageList";
-import SearchBar from "../image-search/SearchBar";
+import searchImages from "../api";
+import ImageList from "../components/image-search/ImageList";
+import SearchBar from "../components/image-search/SearchBar";
 
-const ImageSearch = () => {
+const ImageSearchPage = () => {
   const [images, setImages] = useState([]);
   const handleSubmit = async (term) => {
     const result = await searchImages(term);
@@ -18,4 +18,4 @@ const ImageSearch = () => {
   );
 };
 
-export default ImageSearch;
+export default ImageSearchPage;
