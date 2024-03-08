@@ -1,6 +1,7 @@
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { removeListItem } from "../../store";
 import Button from "../reusable/Button";
+import Panel from "../reusable/Panel";
 
 const ExpenseList = () => {
   const dispatch = useDispatch();
@@ -20,14 +21,17 @@ const ExpenseList = () => {
         const bold =
           name && item.name.toLowerCase().includes(name.toLowerCase());
         return (
-          <div className={`panel ${bold && "bold"}`} key={item.id}>
+          <Panel
+            className={`flex justify-between ${bold && "bold"}`}
+            key={item.id}
+          >
             <p>
               {item.name} - ${item.cost}
             </p>
-            <Button danger onClick={() => handleItemDelete(item)}>
+            <Button danger rounded onClick={() => handleItemDelete(item)}>
               X
             </Button>
-          </div>
+          </Panel>
         );
       })}
     </div>

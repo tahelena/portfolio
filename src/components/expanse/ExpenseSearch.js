@@ -8,10 +8,10 @@ const ExpenseSearch = () => {
     dispatch(changeSearchTerm(event.target.value));
   };
   return (
-    <div className="list-header">
-      <h3 className="title is-3">My Items</h3>
-      <div className="search field is-horizontal">
-        <label className="label">Search</label>
+    <div className="flex flex-row justify-between items-center">
+      <h3 className="mb-0 text-xl">My Items</h3>
+      <div className="flex items-end">
+        <label className="mb-0 mr-1">Search</label>
         <input
           type="text"
           className="input"

@@ -27,7 +27,7 @@ const ExpenseForm = () => {
           <div className="field">
             <label className="label">Name</label>
             <input
-              className="input is-expanded"
+              className="border rounded border-slate-200"
               type="text"
               value={name}
               onChange={handleNameChange}
@@ -36,14 +36,16 @@ const ExpenseForm = () => {
           <div className="field">
             <label className="label">Cost</label>
             <input
-              className="input is-expanded"
+              className="border rounded border-slate-200"
               type="number"
               value={cost || ""}
               onChange={handleCostChange}
             />
           </div>
           <div className="field">
-            <Button success>Submit</Button>
+            <Button success rounded>
+              Submit
+            </Button>
           </div>
         </div>
       </form>

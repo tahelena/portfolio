@@ -32,10 +32,10 @@ const CounterPageReducer = ({ initialCount }) => {
       <h1 className="text-lg">Count is {state.count}</h1>
       <div className="flex flex-row gap-2">
         <Button success outline onClick={increase}>
-          Increment
+          Increase
         </Button>
         <Button danger outline onClick={decrease}>
-          Decrement
+          Decrease
         </Button>
       </div>
       <form onSubmit={handleSubmit}>

@@ -9,7 +9,7 @@ const ExpenseValue = () => {
       .reduce((acc, item) => acc + item.cost, 0)
   );
 
-  return <div className="items-value">Total: ${totalValue}</div>;
+  return <div className="text-right text-xl">Total: ${totalValue}</div>;
 };
 
 export default ExpenseValue;

@@ -6,9 +6,8 @@ import App from "./App";
 import { NavigationProvider } from "./context/navigation";
 import { store } from "./store";
 
-import "bulma/css/bulma.css";
 import "./styles/index.css";
-import "./styles/styles.css";
+
 import { BooksProvider } from "./context/books";
 
 const root = createRoot(document.getElementById("root"));
