@@ -1,9 +1,8 @@
 import ImageShow from "./ImageShow";
-import "../../style/ImageList.css";
 
 const ImageList = ({ images }) => {
   return (
-    <div className="image-list">
+    <div className="flex flex-wrap gap-4">
       {images.map((image, idx) => (
         <ImageShow image={image} key={idx} />
       ))}

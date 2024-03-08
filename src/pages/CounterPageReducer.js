@@ -4,8 +4,8 @@ import Panel from "../components/reusable/Panel";
 import { produce } from "immer";
 import reducer_count, {
   ADD_VALUE_TO_COUNT,
-  DECREMENT_COUNT,
-  INCREMENT_COUNT,
+  DECREASE_COUNT,
+  INCREASE_COUNT,
   SET_VALUE_TO_ADD,
 } from "../reducer/reducer-count";
 
@@ -25,16 +25,16 @@ const CounterPageReducer = ({ initialCount }) => {
     dispatch({ type: ADD_VALUE_TO_COUNT });
   };
 
-  const increment = () => dispatch({ type: INCREMENT_COUNT });
-  const decrement = () => dispatch({ type: DECREMENT_COUNT });
+  const increase = () => dispatch({ type: INCREASE_COUNT });
+  const decrease = () => dispatch({ type: DECREASE_COUNT });
   return (
     <Panel className="m-3">
       <h1 className="text-lg">Count is {state.count}</h1>
       <div className="flex flex-row gap-2">
-        <Button success outline onClick={increment}>
+        <Button success outline onClick={increase}>
           Increment
         </Button>
-        <Button danger outline onClick={decrement}>
+        <Button danger outline onClick={decrease}>
           Decrement
         </Button>
       </div>

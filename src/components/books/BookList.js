@@ -5,7 +5,7 @@ function BookList() {
   const { books } = useBooksContext();
 
   return (
-    <div className="book-list">
+    <div className="book-list flex flex-wrap gap-4">
       {!books[0] ? (
         <div> Please run server</div>
       ) : (

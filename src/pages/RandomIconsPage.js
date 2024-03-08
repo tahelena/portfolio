@@ -1,6 +1,6 @@
 import { useState } from "react";
 import IconShow from "../components/IconShow";
-import "../styles/IconShow.css";
+import Button from "../components/reusable/Button";
 
 const getRandomIcon = () => {
   const icons = ["cat", "sun", "dog", "cloud", "bell", "house"];
@@ -16,9 +16,15 @@ const RandomIconsPage = () => {
     <IconShow type={icon} key={index} />
   ));
   return (
-    <div className="app">
-      <button onClick={handleClick}>Add icon</button>
-      <div className="icons-list">{renderedIcons}</div>
+    <div>
+      <div className="flex justify-center">
+        <Button onClick={handleClick} primary rounded>
+          Add icon
+        </Button>
+      </div>
+      <div className="flex flex-row flex-wrap justify-center">
+        {renderedIcons}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { removeListItem } from "../../store";
+import Button from "../reusable/Button";
 
 const ExpenseList = () => {
   const dispatch = useDispatch();
@@ -23,12 +24,9 @@ const ExpenseList = () => {
             <p>
               {item.name} - ${item.cost}
             </p>
-            <button
-              className="button is-danger"
-              onClick={() => handleItemDelete(item)}
-            >
+            <Button danger onClick={() => handleItemDelete(item)}>
               X
-            </button>
+            </Button>
           </div>
         );
       })}

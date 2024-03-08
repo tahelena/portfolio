@@ -1,5 +1,6 @@
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { addListItem, changeCost, changeName } from "../../store";
+import Button from "../reusable/Button";
 
 const ExpenseForm = () => {
   const dispatch = useDispatch();
@@ -42,7 +43,7 @@ const ExpenseForm = () => {
             />
           </div>
           <div className="field">
-            <button className="button is-link">Submit</button>
+            <Button success>Submit</Button>
           </div>
         </div>
       </form>

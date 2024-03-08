@@ -1,6 +1,8 @@
 import { useState } from "react";
 import BookEdit from "./BookEdit";
 import useBooksContext from "../../hooks/use-books-context";
+import Button from "../reusable/Button";
+import Panel from "../reusable/Panel";
 
 function BookShow({ book }) {
   const [showEdit, setShowEdit] = useState(false);
@@ -16,18 +18,22 @@ function BookShow({ book }) {
   }
 
   return (
-    <div className="book-show">
-      <img alt="books" src={`https://picsum.photos/seed/${book.id}/300/200`} />
-      <div>{content}</div>
-      <div className="actions">
-        <button className="edit" onClick={handleEditClick}>
+    <Panel className="book-show w-60">
+      <img
+        className="w-60"
+        alt="books"
+        src={`https://picsum.photos/seed/${book.id}/300/200`}
+      />
+      <p className="pb-2">{content}</p>
+      <div className="flex gap-2">
+        <Button warning onClick={handleEditClick}>
           Edit
-        </button>
-        <button className="delete" onClick={handleDeleteClick}>
+        </Button>
+        <Button danger onClick={handleDeleteClick}>
           Delete
-        </button>
+        </Button>
       </div>
-    </div>
+    </Panel>
   );
 }
 

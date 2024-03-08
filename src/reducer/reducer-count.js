@@ -1,15 +1,15 @@
-export const INCREMENT_COUNT = "increment-count";
-export const DECREMENT_COUNT = "decrement-count";
+export const INCREASE_COUNT = "increment-count";
+export const DECREASE_COUNT = "decrement-count";
 export const SET_VALUE_TO_ADD = "set-value-to-add";
 export const ADD_VALUE_TO_COUNT = "add-value-to-count";
 
 // ------- using immer library
 const reducer_count = (state, action) => {
   switch (action.type) {
-    case INCREMENT_COUNT:
+    case INCREASE_COUNT:
       state.count = state.count + 1;
       return;
-    case DECREMENT_COUNT:
+    case DECREASE_COUNT:
       state.count = state.count - 1;
       return;
     case SET_VALUE_TO_ADD:
@@ -28,7 +28,7 @@ const reducer_count = (state, action) => {
 //   switch (action.type) {
 //     case INCREMENT_COUNT:
 //       return { ...state, count: state.count + 1 };
-//     case DECREMENT_COUNT:
+//     case DECREASE_COUNT:
 //       return { ...state, count: state.count - 1 };
 //     case SET_VALUE_TO_ADD:
 //       return { ...state, valueToAdd: action.payload };

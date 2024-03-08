@@ -1,5 +1,5 @@
 import Route from "./components/reusable/Route";
-import SideBar from "./components/SideBar";
+import SideBar from "./components/menu/SideBar";
 import AccordionPage from "./pages/AccordionPage";
 import BookPage from "./pages/BookPage";
 import ButtonPage from "./pages/ButtonPage";
@@ -7,9 +7,10 @@ import CounterPage from "./pages/CounterPage";
 import CounterPageReducer from "./pages/CounterPageReducer";
 import DropdownPage from "./pages/DropdownPage";
 import ExpensePage from "./pages/ExpensePage";
+import { HomePage } from "./pages/HomePage";
 import ImageSearchPage from "./pages/ImageSearchPage";
 import ModalPage from "./pages/ModalPage";
-import  MoviesSongPage  from "./pages/MovieSongPage";
+import MoviesSongPage from "./pages/MovieSongPage";
 import RandomIconsPage from "./pages/RandomIconsPage";
 import TablePage from "./pages/TablePage";
 
@@ -18,6 +19,9 @@ const App = () => {
     <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
       <SideBar />
       <div className="col-span-5">
+        <Route path="/">
+          <HomePage />
+        </Route>
         <Route path="/components/accordion">
           <AccordionPage />
         </Route>
@@ -41,19 +45,19 @@ const App = () => {
         </Route>
         <Route path="/apps/movie-song">
           <MoviesSongPage />
-        </Route> 
+        </Route>
         <Route path="/apps/expense">
           <ExpensePage />
-        </Route> 
+        </Route>
         <Route path="/apps/books">
-        <BookPage />
-      </Route> 
-      <Route path="/apps/image-search">
-      <ImageSearchPage />
-    </Route> 
-    <Route path="/apps/random-icons">
-    <RandomIconsPage />
-  </Route> 
+          <BookPage />
+        </Route>
+        <Route path="/apps/image-search">
+          <ImageSearchPage />
+        </Route>
+        <Route path="/apps/random-icons">
+          <RandomIconsPage />
+        </Route>
       </div>
     </div>
   );

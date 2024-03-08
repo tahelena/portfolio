@@ -17,18 +17,18 @@ const CounterPage = ({ initialCount }) => {
     setValueToAdd(0);
   };
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  const increase = () => setCount(count + 1);
+  const decrease = () => setCount(count - 1);
 
   return (
     <Panel className="m-3">
       <h1 className="text-lg">Count is {count}</h1>
       <div className="flex flex-row gap-2">
-        <Button success outline onClick={increment}>
-          Increment
+        <Button success outline onClick={increase}>
+          Increase{" "}
         </Button>
-        <Button danger outline onClick={decrement}>
-          Decrement
+        <Button danger outline onClick={decrease}>
+          Decrease
         </Button>
       </div>
       <form onSubmit={handleSubmit}>

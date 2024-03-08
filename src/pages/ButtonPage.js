@@ -2,8 +2,8 @@ import Button from "../components/reusable/Button";
 
 const ButtonPage = () => {
   return (
-    <div className="flex flex-wrap gap-4 flex-col">
-      <div>
+    <div className="flex flex-wrap gap-4">
+      <div className="flex flex-col gap-2">
         <span>
           <Button primary>Button Primary</Button>
         </span>
@@ -20,7 +20,7 @@ const ButtonPage = () => {
           <Button success>Button Danger</Button>
         </span>
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         <span>
           <Button primary rounded>
             Button Primary
@@ -47,7 +47,7 @@ const ButtonPage = () => {
           </Button>
         </span>
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         <span>
           <Button primary outline>
             Button Primary
@@ -74,7 +74,7 @@ const ButtonPage = () => {
           </Button>
         </span>
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         <span>
           <Button primary rounded outline>
             Button Primary

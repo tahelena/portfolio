@@ -1,5 +1,7 @@
 import { useState } from "react";
 import useBooksContext from "../../hooks/use-books-context";
+import Button from "../reusable/Button";
+import Panel from "../reusable/Panel";
 
 function BookCreate() {
   const [title, setTitle] = useState("");
@@ -15,14 +17,14 @@ function BookCreate() {
   };
 
   return (
-    <div className="book-create">
-      <h3>Add a Book</h3>
+    <Panel className="book-create mt-4">
+      <h3 className="text-xl">Add a Book</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
-        <input className="input" value={title} onChange={handleChange} />
-        <button className="button">Create!</button>
+        <input className="input mb-4" value={title} onChange={handleChange} />
+        <Button primary>Create!</Button>
       </form>
-    </div>
+    </Panel>
   );
 }
 

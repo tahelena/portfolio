@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useBooksContext from "../../hooks/use-books-context";
+import Button from "../reusable/Button";
 
 function BookEdit({ book, onSubmit }) {
   const [title, setTitle] = useState(book.title);
@@ -19,7 +20,7 @@ function BookEdit({ book, onSubmit }) {
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       />
-      <button className="button is-primary">Save</button>
+      <Button primary>Save</Button>
     </form>
   );
 }

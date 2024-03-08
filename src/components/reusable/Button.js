@@ -13,7 +13,7 @@ const Button = ({
   ...props
 }) => {
   const classes = twMerge(
-    classnames(props.className, "px-3 py-1.5 border ", {
+    classnames(props.className, "px-3 py-1.5 border w-auto", {
       "border-blue-500 bg-blue-500 text-white": primary,
       "border-blue-300 bg-blue-300 text-white": secondary,
       "border-green-500 bg-green-500 text-white": success,

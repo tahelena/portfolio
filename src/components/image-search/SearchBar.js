@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../style/SearchBar.css";
+import Panel from "../reusable/Panel";
 
 const SearchBar = ({ onSubmit }) => {
   const [term, setTerm] = useState("");
@@ -9,12 +9,16 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <div className="search-bar">
-      <form onSubmit={handleFormSubmit}>
-        <label> Search for images</label>
-        <input onChange={(e) => setTerm(e.target.value)} value={term} />
+    <Panel className="mb-4">
+      <form className="flex flex-col" onSubmit={handleFormSubmit}>
+        <input
+          className="border"
+          onChange={(e) => setTerm(e.target.value)}
+          value={term}
+          placeholder="Search for images"
+        />
       </form>
-    </div>
+    </Panel>
   );
 };
 

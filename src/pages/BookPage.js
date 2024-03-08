@@ -8,17 +8,17 @@ function BookPage() {
 
   useEffect(() => {
     try {
-        fetchBooks();
+      fetchBooks();
     } catch (error) {
-        console.log('Error ',error)
+      console.log("Error ", error);
     }
-    
   }, [fetchBooks]);
 
   return (
-    <div className="app">
-      <h1>Reading List</h1>
+    <div>
+      <h1 className="text-5xl bold pb-4">Reading List</h1>
       <BookList />
+
       <BookCreate />
     </div>
   );

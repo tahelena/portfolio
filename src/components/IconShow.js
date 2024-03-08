@@ -1,5 +1,4 @@
 import { useState } from "react";
-import '../styles/IconShow.css'
 import {
   FaCat,
   FaSun,
@@ -7,7 +6,7 @@ import {
   FaCloud,
   FaBell,
   FaHouse,
-  FaHeart
+  FaHeart,
 } from "react-icons/fa6";
 
 const iconMap = {
@@ -20,14 +19,20 @@ const iconMap = {
 };
 
 const IconShow = ({ type }) => {
-const [clicks, setClicks]=useState(0)
+  const [clicks, setClicks] = useState(0);
   const Icon = iconMap[type];
 
-  const handleClick=()=>setClicks(clicks+1)
+  const handleClick = () => setClicks(clicks + 1);
   return (
-    <div className="icon-show" onClick={handleClick}>
-      <Icon className='icon' />
-      <FaHeart className='heart' size={`${10+10*clicks}px`}/>
+    <div
+      className="shadow-md m-2 relative border-slate-200 border rounded "
+      onClick={handleClick}
+    >
+      <Icon className="w-50 h-50" size="10rem" />
+      <FaHeart
+        className="absolute bottom-0 right-0 text-red-500"
+        size={`${10 + 10 * clicks > 160 ? 160 : 10 + 10 * clicks}px`}
+      />
     </div>
   );
 };
