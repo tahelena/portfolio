@@ -1,18 +1,17 @@
-import ExpenseForm from "../components/expanse/ExpenseForm";
-import ExpenseList from "../components/expanse/ExpenseList";
-import ExpenseSearch from "../components/expanse/ExpenseSearch";
-import ExpenseValue from "../components/expanse/ExpenseValue";
+import ExpenseForm from "../components/expense/ExpenseForm";
+import ExpenseList from "../components/expense/ExpenseList";
+import ExpenseSearch from "../components/expense/ExpenseSearch";
+import ExpenseValue from "../components/expense/ExpenseValue";
 const ExpensePage = () => {
-    return (
-      <div className="container is-fluid">
-        <ExpenseForm />
-        <ExpenseSearch />
-        <ExpenseList />
+  return (
+    <div className="container is-fluid">
+      <ExpenseForm />
+      <ExpenseSearch />
+      <ExpenseList />
 
-        <ExpenseValue />
-      </div>
-    );
-  };
-  
-  export default ExpensePage
-;
+      <ExpenseValue />
+    </div>
+  );
+};
+
+export default ExpensePage;

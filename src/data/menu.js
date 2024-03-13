@@ -4,6 +4,7 @@ export const componentsLinks = [
   { name: "Dropdown", path: "/components/dropdown" },
   { name: "Modal", path: "/components/modal" },
   { name: "Table", path: "/components/table" },
+  { name: "User Table", path: "/components/user-table" },
 ];
 
 export const appsLinks = [

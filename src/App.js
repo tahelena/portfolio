@@ -13,6 +13,7 @@ import ModalPage from "./pages/ModalPage";
 import MoviesSongPage from "./pages/MovieSongPage";
 import RandomIconsPage from "./pages/RandomIconsPage";
 import TablePage from "./pages/TablePage";
+import UserTablePage from "./pages/TableApiPage";
 
 const App = () => {
   return (
@@ -36,6 +37,9 @@ const App = () => {
         </Route>
         <Route path="/components/table">
           <TablePage />
+        </Route>
+        <Route path="/components/user-table">
+          <UserTablePage />
         </Route>
         <Route path="/components/counter">
           <CounterPage initialCount={10} />
