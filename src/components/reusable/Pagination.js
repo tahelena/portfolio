@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Button from "./Button";
 
 const Pagination = ({ range, setPage, page, slice, onDelete }) => {
   const handleFirstPage = () => {
@@ -29,43 +30,45 @@ const Pagination = ({ range, setPage, page, slice, onDelete }) => {
 
   return (
     <div className="footer">
-      <button className="button delete-button" onClick={handleDelete}>
-        Delete Selected
-      </button>
-      <div className="pagination">
-        <button
-          className={`first-page button ${page === 1 ? "button inactive-button" : "button"} `}
+      {
+        <Button rounded danger onClick={handleDelete}>
+          Delete Selected
+        </Button>
+      }
+      <div className="flex justify-center">
+        <Button
+          className={`first-page px-4 py-1 ${page === 1 ? " inactive-button" : ""} `}
           onClick={handleFirstPage}
         >
           &laquo;
-        </button>
-        <button
-          className={`previous-page button ${page === 1 ? "button inactive-button" : "button"} `}
+        </Button>
+        <Button
+          className={`previous-page px-4 py-1  ${page === 1 ? " inactive-button" : ""} `}
           onClick={handleBackPage}
         >
           &#8249;
-        </button>
+        </Button>
         {range.map((el, index) => (
-          <button
+          <Button
             key={index}
-            className={`${page === el ? "button active-button" : "button"}`}
+            className={`px-4 py-1 ${page === el ? " active-button" : ""}`}
             onClick={() => setPage(el)}
           >
             {el}
-          </button>
+          </Button>
         ))}
-        <button
-          className={`next-page  ${page === range[range.length - 1] ? "button inactive-button" : "button"} `}
+        <Button
+          className={`next-page px-4 py-1  ${page === range[range.length - 1] ? " inactive-button" : ""} `}
           onClick={handleNextPage}
         >
           &#8250;
-        </button>
-        <button
-          className={`last-page  ${page === range[range.length - 1] ? "button inactive-button" : "button"} `}
+        </Button>
+        <Button
+          className={`last-page px-4 py-1  ${page === range[range.length - 1] ? " inactive-button" : ""} `}
           onClick={handleLastPage}
         >
           &raquo;
-        </button>
+        </Button>
       </div>
     </div>
   );
