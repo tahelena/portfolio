@@ -1,4 +1,4 @@
-# Started as React-redux course Udemy - Sections 6 to 8 then became my personal component library
+# Started as React-redux course Udemy then became my personal component library
 
 ## Available Scripts
 
